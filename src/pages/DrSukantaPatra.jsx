@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Link } from "react-router-dom";
+
 import {
   FaArrowLeft,
   FaGraduationCap,
@@ -17,10 +17,13 @@ import {
   FaIdCard,
   FaTrophy,
   FaGlobeAmericas,
-  FaStar,      
+  FaStar,
+  FaBook
 } from "react-icons/fa";
+
 import "./Patra.css";
 import librarian2 from "../assets/team/librarian2.jpeg";
+
 
 
 function DrSukantaPatra() {
