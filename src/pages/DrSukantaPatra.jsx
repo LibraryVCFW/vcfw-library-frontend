@@ -3,6 +3,10 @@ import {
   FaArrowLeft, 
   FaGraduationCap, 
   FaAward, 
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaResearchgate,       
   FaBook, 
   FaGlobe, 
   FaLinkedin, 
@@ -23,7 +27,7 @@ import {
   FaCertificate,
   FaGlobeAmericas,
   FaResearchgate
-} from "react-icons/fa";
+} from "react-icons/fa/index.js";
 import "./Patra.css";
 import librarian2 from "../assets/team/librarian2.jpeg";
 
