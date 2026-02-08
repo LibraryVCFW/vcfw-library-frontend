@@ -1,0 +1,109 @@
+.about-library {
+  padding: 60px;
+  background-color: #f9fbfd;
+  background-image: url("https://www.transparenttextures.com/patterns/white-paper.png");
+}
+
+/* Heading */
+.about-library h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #0c6b74;
+  font-weight: 700;
+}
+
+/* Intro */
+.about-intro {
+  max-width: 900px;
+  margin: 0 auto 35px;
+  font-size: 15px;
+  line-height: 1.8;
+  text-align: justify;
+  color: #333;
+}
+
+/* IMAGE SCROLLER */
+.image-scroller {
+  overflow: hidden;
+  margin-bottom: 45px;
+}
+
+.image-track {
+  display: flex;
+  animation: scrollImages 35s linear infinite;
+}
+
+.image-box {
+  width: 200px;
+  height: 140px;
+  flex-shrink: 0;
+  margin-right: 18px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.image-box:hover img {
+  transform: scale(1.15);
+}
+
+/* SCROLL ANIMATION */
+@keyframes scrollImages {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* INFO GRID */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* CARD */
+.about-card {
+  background: white;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 0 14px rgba(0,0,0,0.14);
+  transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-6px);
+}
+
+.about-card h3 {
+  margin-bottom: 14px;
+  color: #8b5a00;
+}
+
+.about-card p {
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-library {
+    padding: 35px 20px;
+  }
+
+  .image-box {
+    width: 160px;
+    height: 110px;
+  }
+}

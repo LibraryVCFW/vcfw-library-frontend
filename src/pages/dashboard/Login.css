@@ -1,0 +1,57 @@
+.login-box {
+  max-width: 320px;
+  margin: 60px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 8px;
+}
+
+.error {
+  color: red;
+}
+
+/* CAPTCHA */
+.captcha-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.captcha-text {
+  flex: 1;
+  background: #e6f4f5;
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 3px;
+  border-radius: 4px;
+}
+
+.refresh-captcha {
+  margin-left: 6px;
+  padding: 6px 10px;
+  border: none;
+  background: #0c6b74;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* AUTHORISED CHECKBOX */
+.auth-check {
+  display: block;
+  font-size: 13px;
+  margin: 10px 0;
+}

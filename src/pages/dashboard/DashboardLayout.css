@@ -1,0 +1,40 @@
+.dashboard-layout {
+  min-height: 100vh;
+  background: #f4f6f9;
+}
+
+.dashboard-header {
+  background: #0c6b74;
+  color: white;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.dash-btn {
+  background: #e6f4f5;
+  color: #0c6b74;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.logout-btn {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.dashboard-body {
+  padding: 30px;
+}

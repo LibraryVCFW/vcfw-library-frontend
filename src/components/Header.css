@@ -1,0 +1,108 @@
+/* Background image */
+.header-bg {
+  background-image: url("https://t3.ftcdn.net/jpg/13/55/17/26/240_F_1355172659_RA275wzboAVk9XpymxOjBQhDYRAu0D7q.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Overlay */
+.header-overlay {
+  background: rgba(3, 148, 104, 0.404);
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  flex-wrap: wrap;
+  
+}
+
+/* MAIN COLLEGE LOGO */
+.main-logo img {
+  width: 95px;
+  background: rgb(12, 12, 12);
+  padding: 1px;
+  border-radius: 4px;
+  box-shadow: 0 0 18px rgba(255, 215, 0, 0.9);
+  animation: glow 1s infinite alternate;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* TEXT */
+.header-text {
+  color: rgb(255, 255, 255);
+  flex: 1;
+}
+
+.library-title {
+  font-size: 35px;
+  font-weight: 800;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.library-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 3px;
+  background: #ffd700;
+  transition: width 0.4s ease;
+}
+
+.library-title:hover::after {
+  width: 100%;
+}
+
+.college-title {
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 4px;
+}
+.details {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 4px;
+}
+.address {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 4px;
+}
+/* SUB LOGOS */
+.header-logos {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.header-logos img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  background: white;
+  padding: 0px;
+  border-radius: 50%;
+  animation: glow 1s infinite alternate;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Glow animation */
+@keyframes glow {
+  from {
+    box-shadow: 0 0 6px rgba(231, 172, 172, 0.4);
+  }
+  to {
+    box-shadow: 0 0 16px rgba(255, 215, 0, 0.9);
+  }
+}
+
+.header-logos img:hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 1);
+}

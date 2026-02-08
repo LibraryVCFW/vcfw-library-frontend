@@ -1,0 +1,115 @@
+.contact-section {
+  padding: 50px;
+  background: linear-gradient(135deg, #f0f9fb, #ffffff);
+}
+
+.contact-section h2 {
+  text-align: center;
+  font-size: 30px;
+  color: #0c6b74;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.contact-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 45px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* GRID */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 35px;
+}
+
+/* DETAILS */
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* CARD */
+.contact-card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 0 14px rgba(0,0,0,0.14);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* SHINE EFFECT */
+.contact-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.8),
+    transparent
+  );
+}
+
+.contact-card:hover::before {
+  animation: shineMove 0.9s linear;
+}
+
+@keyframes shineMove {
+  from { left: -120%; }
+  to { left: 120%; }
+}
+
+/* HOVER */
+.contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 0 18px rgba(0, 150, 150, 0.6),
+    0 0 30px rgba(0, 150, 150, 0.4);
+}
+
+.contact-card h3 {
+  margin-bottom: 8px;
+  color: #0c6b74;
+}
+
+.contact-card p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* MAP */
+.contact-map {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 18px rgba(0,0,0,0.2);
+  min-height: 250px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-map {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 35px 20px;
+  }
+}

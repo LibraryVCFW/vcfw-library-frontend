@@ -1,0 +1,266 @@
+/* ===================== PAGE LAYOUT ===================== */
+
+.resources-page {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+}
+
+.resources-section {
+  margin-bottom: 60px;
+}
+
+/* ===================== SECTION HEADINGS ===================== */
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #1e88e5;
+  color: #1e293b;
+}
+
+/* ===================== ERROR / PLACEHOLDER ===================== */
+
+.error-text {
+  color: #b91c1c;
+  background: #fee2e2;
+  padding: 12px 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.placeholder-text {
+  font-size: 16px;
+  color: #64748b;
+  background: #f8fafc;
+  padding: 20px;
+  border-left: 4px solid #94a3b8;
+  border-radius: 4px;
+}
+
+/* ===================== NEW ARRIVALS TABLE ===================== */
+
+.resources-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.resources-table thead {
+  background: #1e293b;
+  color: #ffffff;
+}
+
+.resources-table th,
+.resources-table td {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.resources-table th {
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.resources-table tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.resources-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.resources-table tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+.resources-table tbody tr:hover {
+  background: #e0f2fe;
+  transition: background 0.2s ease-in-out;
+}
+
+/* ===================== INSTITUTIONAL PUBLICATIONS ===================== */
+
+.publication-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.publication-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.publication-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.publication-card img {
+  max-width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.publication-card a {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 14px;
+  background: #1e88e5;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.publication-card a:hover {
+  background: #1565c0;
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 22px;
+  }
+
+  .resources-table th,
+  .resources-table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .publication-card img {
+    height: 180px;
+  }
+}
+
+/* Free Resources Section */
+.free-resources-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.free-resources-section .section-title {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  color: #6c757d;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.free-resources-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.free-resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.free-resource-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  min-height: 60px;
+}
+
+.free-resource-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.resource-icon {
+  font-size: 1.2rem;
+}
+
+/* Button color variants */
+.btn-warning {
+  background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+  color: #212529;
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+  color: white;
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #6c757d 0%, #5a6268 100%);
+  color: white;
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+  color: white;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+}
+
+.btn-white {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  color: #212529;
+  border: 1px solid #dee2e6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .free-resources-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 0.75rem;
+  }
+  
+  .free-resource-btn {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    min-height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .free-resources-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .free-resources-section {
+    padding: 1.5rem 1rem;
+  }
+}

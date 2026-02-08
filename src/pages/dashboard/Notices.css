@@ -1,0 +1,61 @@
+.notice-admin h2 {
+  margin-bottom: 20px;
+}
+
+.notice-form {
+  max-width: 600px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.notice-form input,
+.notice-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.notice-form textarea {
+  min-height: 80px;
+}
+
+.notice-form button {
+  background: #0c6b74;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.notice-list {
+  max-width: 800px;
+}
+
+.notice-item {
+  background: white;
+  padding: 18px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.notice-item h4 {
+  margin-bottom: 6px;
+}
+
+.notice-item a {
+  font-size: 13px;
+  color: #2563eb;
+}
+
+.notice-actions button {
+  margin-left: 6px;
+  padding: 6px 10px;
+}

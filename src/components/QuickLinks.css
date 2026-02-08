@@ -1,0 +1,27 @@
+.quick-links {
+  top: 180px;     /* 120 (header) + 60 (navbar) */
+  width: 100%;
+  background: #222;
+  z-index: 1000;
+}
+
+.quick-links {
+  background: #0f8f8f;
+  padding: 12px;
+  text-align: center;
+}
+
+.quick-links a {
+  background: #ff4d4d;
+  color: white;
+  padding: 6px 12px;
+  margin: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.quick-links a:hover {
+  background: #ff0000;
+}

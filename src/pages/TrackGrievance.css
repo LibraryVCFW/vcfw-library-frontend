@@ -1,0 +1,53 @@
+.track-box {
+  max-width: 480px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  background: #fff;
+  text-align: center;
+}
+
+.track-box h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.track-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+
+.track-box button {
+  padding: 10px 16px;
+  background: #004080;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.track-box button:hover {
+  background: #002f5e;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.result-box {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.reply-box {
+  background: #f4f6f8;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.notice {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #555;
+}
