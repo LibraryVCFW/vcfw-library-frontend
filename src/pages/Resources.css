@@ -95,7 +95,7 @@
 }
 
 .publication-card {
-  background: #ffffff;
+  background: #f7bfbf;
   border-radius: 8px;
   padding: 15px;
   text-align: center;
@@ -152,7 +152,7 @@
 
 /* Free Resources Section */
 .free-resources-section {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: linear-gradient(135deg, #cde3f8 0%, #e9ecef 100%);
   border-radius: 12px;
   padding: 2rem;
   margin-top: 2rem;
