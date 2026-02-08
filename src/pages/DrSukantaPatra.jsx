@@ -1,32 +1,23 @@
 import { Link } from "react-router-dom";
-import { 
+import {
   FaArrowLeft, 
-  FaGraduationCap, 
-  FaAward, 
+  FaGraduationCap,
   FaFacebook,
   FaTwitter,
-  FaInstagram,
-  FaResearchgate,       
-  FaBook, 
-  FaGlobe, 
-  FaLinkedin, 
+  FaLinkedin,
+  FaResearchgate,
+  FaCertificate,
+  FaGlobe,
   FaEnvelope, 
   FaPhone, 
-  FaMapMarkerAlt, 
-  FaUserTie, 
-  FaStar, 
-  FaUniversity, 
-  FaFilePdf, 
-  FaExternalLinkAlt,
+  FaMapMarkerAlt,
   FaPlane,
-  FaCalendar,
   FaBriefcase,
   FaChalkboardTeacher,
   FaIdCard,
   FaTrophy,
   FaCertificate,
   FaGlobeAmericas,
-  FaResearchgate
 } from "react-icons/fa/index.js";
 import "./Patra.css";
 import librarian2 from "../assets/team/librarian2.jpeg";
