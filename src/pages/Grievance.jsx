@@ -26,7 +26,8 @@ export default function Grievance() {
 
   const handleChange = (e) =>
     setForm({ ...form, [e.target.name]: e.target.value });
-
+   
+  console.log("API_BASE USED =", API_BASE);
   /* ================= SUBMIT ================= */
   const submitGrievance = async (e) => {
     e.preventDefault();
@@ -84,6 +85,7 @@ export default function Grievance() {
     } catch (err) {
       alert("Server error. Please try again.");
     }
+    
   };
 
   /* ================= TRACK ================= */
