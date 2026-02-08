@@ -1,28 +1,29 @@
 import { Link } from "react-router-dom";
 
-import {
-  FaArrowLeft,
-  FaGraduationCap,
-  FaFacebook,
-  FaTwitter,
-  FaLinkedin,
-  FaResearchgate,
-  FaCertificate,
-  FaGlobe,
-  FaEnvelope,
-  FaPhone,
-  FaMapMarkerAlt,
-  FaPlane,
-  FaBriefcase,
-  FaIdCard,
-  FaTrophy,
-  FaGlobeAmericas,
-  FaStar,
-  FaBook
-} from "react-icons/fa";
+import { Link } from "react-router-dom";
+
+import { FaArrowLeft } from "react-icons/fa6";
+import { FaGraduationCap } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa6";
+import { FaTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaResearchgate } from "react-icons/fa6";
+import { FaCertificate } from "react-icons/fa6";
+import { FaGlobe } from "react-icons/fa6";
+import { FaEnvelope } from "react-icons/fa6";
+import { FaPhone } from "react-icons/fa6";
+import { FaMapMarkerAlt } from "react-icons/fa6";
+import { FaPlane } from "react-icons/fa6";
+import { FaBriefcase } from "react-icons/fa6";
+import { FaIdCard } from "react-icons/fa6";
+import { FaTrophy } from "react-icons/fa6";
+import { FaGlobeAmericas } from "react-icons/fa6";
+import { FaStar } from "react-icons/fa6";
+import { FaBook } from "react-icons/fa6";
 
 import "./Patra.css";
 import librarian2 from "../assets/team/librarian2.jpeg";
+
 
 
 
