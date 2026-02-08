@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
-  FaArrowLeft, 
+  FaArrowLeft,
   FaGraduationCap,
   FaFacebook,
   FaTwitter,
@@ -8,19 +9,19 @@ import {
   FaResearchgate,
   FaCertificate,
   FaGlobe,
-  FaEnvelope, 
-  FaPhone, 
+  FaEnvelope,
+  FaPhone,
   FaMapMarkerAlt,
   FaPlane,
   FaBriefcase,
-  FaChalkboardTeacher,
   FaIdCard,
   FaTrophy,
-  FaCertificate,
   FaGlobeAmericas,
-} from "react-icons/fa/index.js";
+  FaStar,      
+} from "react-icons/fa";
 import "./Patra.css";
 import librarian2 from "../assets/team/librarian2.jpeg";
+
 
 function DrSukantaPatra() {
   return (
