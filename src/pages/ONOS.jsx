@@ -4,7 +4,7 @@ import "./onos.css";
 const CU_LOGO = "https://www.culibrary.ac.in/assets/images/header_logo.png";
 const INDIA_EMBLEM = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Emblem_of_India_%28gold%29.svg/500px-Emblem_of_India_%28gold%29.svg.png?20260116052410";
 
-const OnosPortal = () => {
+const ONOS = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   /* =======================
@@ -200,4 +200,4 @@ const OnosPortal = () => {
   );
 };
 
-export default OnosPortal;
+export default ONOS;
