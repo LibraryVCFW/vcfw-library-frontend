@@ -1,13 +1,33 @@
 import { useState, useEffect, useRef } from "react";
 import "./FloatingAssistant.css";
 
-// Add logo/icon component
-const AssistantLogo = ({ size = 24 }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM15.07 11.25L14.17 12.17C13.45 12.89 13 13.5 13 15H11V14.5C11 13.39 11.45 12.39 12.17 11.67L13.41 10.41C13.78 10.05 14 9.55 14 9C14 7.9 13.1 7 12 7C10.9 7 10 7.9 10 9H8C8 6.79 9.79 5 12 5C14.21 5 16 6.79 16 9C16 9.88 15.64 10.68 15.07 11.25Z" fill="currentColor"/>
+// Updated Assistant Logo Component - increased size and enhanced design
+const AssistantLogo = ({ size = 100 }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    {/* Human silhouette with circuit elements - enhanced design */}
+    <path d="M12 4C8.134 4 5 7.134 5 11C5 14.5 7.5 17 12 17C16.5 17 19 14.5 19 11C19 7.134 15.866 4 12 4Z" 
+          opacity="0.15"/>
+    
+    {/* Circuit nodes representing AI network */}
+    <circle cx="9" cy="9" r="1.5" opacity="0.9"/>
+    <circle cx="12" cy="7" r="1.5" opacity="0.9"/>
+    <circle cx="15" cy="9" r="1.5" opacity="0.9"/>
+    
+    {/* Human head outline */}
+    <circle cx="12" cy="9" r="4" fill="none" stroke="currentColor" strokeWidth="1.2"/>
+    
+    {/* Body and connection points */}
+    <path d="M12 13V16M9 19H15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+    
+    {/* Digital/data flow lines */}
+    <path d="M9 11L7 13M15 11L17 13" stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.7"/>
+    
+    {/* Central connection spark */}
+    <path d="M12 11L11 13H13L12 15" stroke="currentColor" strokeWidth="1.2" fill="none" opacity="0.8"/>
   </svg>
 );
 
+// Rest of the code remains EXACTLY the same...
 const FAQS = [
   {
     keywords: ["timing", "hours", "open", "close"],
@@ -241,7 +261,7 @@ export default function FloatingAssistant() {
                 autoFocus
               />
               <button onClick={handleSend} className="send-btn" disabled={!input.trim()}>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M2.01 21L23 12L2.01 3L2 10L17 12L2 14L2.01 21Z" fill="currentColor"/>
                 </svg>
               </button>

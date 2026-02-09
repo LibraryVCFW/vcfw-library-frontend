@@ -11,6 +11,9 @@ import Resources from "./pages/Resources";
 import Contact from "./pages/Contact";
 import Activities from "./pages/Activities";
 import Grievance from "./pages/Grievance";
+import ONOS from "./pages/ONOS";
+
+/* OTHER PAGES */
 import Internship from "./pages/Internship";
 import Feedback from "./pages/Feedback";
 
@@ -41,6 +44,7 @@ function App() {
         <Route path="/submission-desk" element={<Submission />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/activities" element={<Activities />} />
+        <Route path="/onos" element={<ONOS />} />
         <Route path="/grievance" element={<Grievance />} />
         <Route path="/track-grievance" element={<TrackGrievance />} />
         <Route path="/contact" element={<Contact />} />

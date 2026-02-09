@@ -48,6 +48,11 @@ export default function Navbar() {
           </NavLink>
         </li>
         <li>
+          <NavLink to="/onos">
+            <span>ONOS</span>
+          </NavLink>
+        </li>
+        <li>
           <NavLink to="/contact">
             <span>Contact Us</span>
           </NavLink>
